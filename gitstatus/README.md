@@ -30,7 +30,7 @@ fast theme with first-class gitstatus integration. If you install Ryzsh10k, you 
 install gitstatus.
 
 ![Ryzsh10k Zsh Theme](
-  https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/master/prompt-styles-high-contrast.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh-media/master/prompt-styles-high-contrast.png)
 
 For those who wish to use gitstatus without a theme, there is
 [gitstatus.prompt.zsh](gitstatus.prompt.zsh). Install it as follows:

@@ -19,13 +19,13 @@ If you are using a different terminal, proceed with manual font installation. ðŸ
 
 1. Download these four ttf files:
    - [MesloLGS NF Regular.ttf](
-       https://github.com/ryzsh/ryzsh10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)
+       https://github.com/ryzsh/ryzsh-media/raw/master/MesloLGS%20NF%20Regular.ttf)
    - [MesloLGS NF Bold.ttf](
-       https://github.com/ryzsh/ryzsh10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)
+       https://github.com/ryzsh/ryzsh-media/raw/master/MesloLGS%20NF%20Bold.ttf)
    - [MesloLGS NF Italic.ttf](
-       https://github.com/ryzsh/ryzsh10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
+       https://github.com/ryzsh/ryzsh-media/raw/master/MesloLGS%20NF%20Italic.ttf)
    - [MesloLGS NF Bold Italic.ttf](
-       https://github.com/ryzsh/ryzsh10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
+       https://github.com/ryzsh/ryzsh-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
 1. Double-click on each file and click "Install". This will make `MesloLGS NF` font available to all
    applications on your system.
 1. Configure your terminal to use this font:
@@ -40,7 +40,7 @@ If you are using a different terminal, proceed with manual font installation. ðŸ
      *Code â†’ Preferences â†’ Settings* (Mac), enter `terminal.integrated.fontFamily` in the search box at
      the top of *Settings* tab and set the value below to `MesloLGS NF`.
      Consult [this screenshot](
-       https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/389133fb8c9a2347929a23702ce3039aacc46c3d/visual-studio-code-font-settings.jpg)
+       https://raw.githubusercontent.com/ryzsh/ryzsh-media/389133fb8c9a2347929a23702ce3039aacc46c3d/visual-studio-code-font-settings.jpg)
      to see how it should look like or see [this issue](
        https://github.com/ryzsh/ryzsh10k/issues/671) for extra information.
    - **GNOME Terminal** (the default Ubuntu terminal): Open *Terminal â†’ Preferences* and click on the
@@ -138,25 +138,25 @@ If you are using a different terminal, proceed with manual font installation. ðŸ
      ```css
      @font-face {
       font-family: "MesloLGS NF";
-      src: url("https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/master/MesloLGS%20NF%20Regular.ttf");
+      src: url("https://raw.githubusercontent.com/ryzsh/ryzsh-media/master/MesloLGS%20NF%20Regular.ttf");
       font-weight: normal;
       font-style: normal;
      }
      @font-face {
          font-family: "MesloLGS NF";
-         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/master/MesloLGS%20NF%20Bold.ttf");
+         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh-media/master/MesloLGS%20NF%20Bold.ttf");
          font-weight: bold;
          font-style: normal;
      }
      @font-face {
          font-family: "MesloLGS NF";
-         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/master/MesloLGS%20NF%20Italic.ttf");
+         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh-media/master/MesloLGS%20NF%20Italic.ttf");
          font-weight: normal;
          font-style: italic;
      }
      @font-face {
          font-family: "MesloLGS NF";
-         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh10k-media/master/MesloLGS%20NF%20Bold%20Italic.ttf");
+         src: url("https://raw.githubusercontent.com/ryzsh/ryzsh-media/master/MesloLGS%20NF%20Bold%20Italic.ttf");
          font-weight: bold;
          font-style: italic;
      }
