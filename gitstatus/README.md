@@ -36,7 +36,7 @@ For those who wish to use gitstatus without a theme, there is
 [gitstatus.prompt.zsh](gitstatus.prompt.zsh). Install it as follows:
 
 ```zsh
-git clone --depth=1 https://github.com/ryzsh/gitstatus.git ~/gitstatus
+git clone --depth=1 https://github.com/ryzsh/ryzsh10k.git ~/gitstatus
 echo 'source ~/gitstatus/gitstatus.prompt.zsh' >>! ~/.zshrc
 ```
 
@@ -44,14 +44,14 @@ Users in China can use the official mirror on gitee.com for faster download.<br>
 中国大陆用户可以使用 gitee.com 上的官方镜像加速下载.
 
 ```zsh
-git clone --depth=1 https://gitee.com/ryzsh/gitstatus.git ~/gitstatus
+git clone --depth=1 https://gitee.com/ryzsh/ryzsh10k.git ~/gitstatus
 echo 'source ~/gitstatus/gitstatus.prompt.zsh' >>! ~/.zshrc
 ```
 
 Alternatively, if you have Homebrew installed:
 
 ```zsh
-brew install ryzsh/gitstatus/gitstatus
+brew install ryzsh/ryzsh10k/gitstatus
 echo "source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh" >>! ~/.zshrc
 ```
 
@@ -137,7 +137,7 @@ The easiest way to take advantage of gitstatus from Bash is via
 [gitstatus.prompt.sh](gitstatus.prompt.sh). Install it as follows:
 
 ```bash
-git clone --depth=1 https://github.com/ryzsh/gitstatus.git ~/gitstatus
+git clone --depth=1 https://github.com/ryzsh/ryzsh10k.git ~/gitstatus
 echo 'source ~/gitstatus/gitstatus.prompt.sh' >> ~/.bashrc
 ```
 
@@ -145,14 +145,14 @@ Users in China can use the official mirror on gitee.com for faster download.<br>
 中国大陆用户可以使用 gitee.com 上的官方镜像加速下载.
 
 ```bash
-git clone --depth=1 https://gitee.com/ryzsh/gitstatus.git ~/gitstatus
+git clone --depth=1 https://gitee.com/ryzsh/ryzsh10k.git ~/gitstatus
 echo 'source ~/gitstatus/gitstatus.prompt.sh' >> ~/.bashrc
 ```
 
 Alternatively, if you have Homebrew installed:
 
 ```zsh
-brew install ryzsh/gitstatus/gitstatus
+brew install ryzsh/ryzsh10k/gitstatus
 echo "source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.sh" >> ~/.bashrc
 ```
 
@@ -163,7 +163,7 @@ This will give you a basic yet functional prompt with git status in it. It's
 [over 10x faster](#benchmarks) than any alternative that can give you comparable prompt.
 
 ![Bash Prompt with GitStatus](
-  https://raw.githubusercontent.com/ryzsh/gitstatus/1ac366952366d89980b3f3484f270b4fa5ae4293/bash-prompt.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh10k/1ac366952366d89980b3f3484f270b4fa5ae4293/bash-prompt.png)
 
 In order to customize your prompt, set `PS1` at the end of `~/.bashrc` after sourcing
 `gitstatus.prompt.sh`. Insert `${GITSTATUS_PROMPT}` where you want git status to go. For example:
@@ -364,7 +364,7 @@ Let's see how `git_diff_index_to_workdir` from libgit2 accomplishes these tasks.
 profile from 200 hot runs over chromium repository.
 
 ![libgit2 CPU profile (hot)](
-  https://raw.githubusercontent.com/ryzsh/gitstatus/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-libgit2.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh10k/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-libgit2.png)
 
 (The CPU profile was created with [gperftools](https://github.com/gperftools/gperftools) and
 rendered with [pprof](https://github.com/google/pprof)).
@@ -378,7 +378,7 @@ strings, sorting arrays, etc.
 Now let's take a look at the CPU profile of gitstatusd on the same task.
 
 ![gitstatusd CPU profile (hot)](
-  https://raw.githubusercontent.com/ryzsh/gitstatus/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-gitstatusd-hot.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh10k/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-gitstatusd-hot.png)
 
 The first impression is that this profile looks pruned. This isn't an artifact. The profile was
 generated with the same tools and the same flags as the profile of libgit2.
@@ -434,7 +434,7 @@ To summarize, here's what gitstatusd was doing when the CPU profile was captured
 Here's how the very first scan of a repository looks like in gitstatusd:
 
 ![gitstatusd CPU profile (cold)](
-  https://raw.githubusercontent.com/ryzsh/gitstatus/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-gitstatusd-cold.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh10k/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-gitstatusd-cold.png)
 
 (Some glibc functions are mislabel on this profile. `explicit_bzero` and `__nss_passwd_lookup` are
 in reality `strcmp` and `memcmp`.)
@@ -483,7 +483,7 @@ _WARNING: Changes to libgit2 are extensive but the testing they underwent isn't.
 ## Compiling
 
 There are prebuilt `gitstatusd` binaries in [releases](
-  https://github.com/ryzsh/gitstatus/releases). When using the official shell bindings
+  https://github.com/ryzsh/ryzsh10k/releases). When using the official shell bindings
 provided by gitstatus, the right binary for your architecture gets downloaded automatically.
 
 If prebuilt binaries don't work for you, you'll need to get your hands dirty.
@@ -491,7 +491,7 @@ If prebuilt binaries don't work for you, you'll need to get your hands dirty.
 ### Compiling for personal use
 
 ```zsh
-git clone --depth=1 https://github.com/ryzsh/gitstatus.git
+git clone --depth=1 https://github.com/ryzsh/ryzsh10k.git
 cd gitstatus
 ./build -w -s -d docker
 ```
@@ -500,7 +500,7 @@ Users in China can use the official mirror on gitee.com for faster download.<br>
 中国大陆用户可以使用 gitee.com 上的官方镜像加速下载.
 
 ```zsh
-git clone --depth=1 https://gitee.com/ryzsh/gitstatus.git
+git clone --depth=1 https://gitee.com/ryzsh/ryzsh10k.git
 cd gitstatus
 ./build -w -s -d docker
 ```

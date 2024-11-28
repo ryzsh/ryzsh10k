@@ -61,7 +61,7 @@
       typeset -g my_git_format=$P9K_CONTENT
     else
       # Use VCS_STATUS_* parameters to assemble Git status. See reference:
-      # https://github.com/ryzsh/gitstatus/blob/master/gitstatus.plugin.zsh.
+      # https://github.com/ryzsh/ryzsh10k/blob/master/gitstatus.plugin.zsh.
       typeset -g my_git_format="${1+%B%4F}git:(${1+%1F}"
       my_git_format+=${${VCS_STATUS_LOCAL_BRANCH:-${VCS_STATUS_COMMIT[1,8]}}//\%/%%}
       my_git_format+="${1+%4F})"

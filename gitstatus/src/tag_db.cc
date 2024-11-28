@@ -156,7 +156,7 @@ void TagDb::ReadLooseTags() {
   if (dir_fd < 0) return;
   ON_SCOPE_EXIT(&) { CHECK(!close(dir_fd)) << Errno(); };
   // TODO: recursively traverse directories so that the file refs/tags/foo/bar gets interpreted
-  // as the tag foo/bar. See https://github.com/ryzsh/gitstatus/issues/254.
+  // as the tag foo/bar. See https://github.com/ryzsh/ryzsh10k/issues/254.
   (void)ListDir(dir_fd, loose_arena_, loose_tags_, /* precompose_unicode = */ false,
                 /* case_sensitive = */ true);
 }

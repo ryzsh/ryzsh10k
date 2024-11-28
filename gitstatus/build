@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Type `build -h` for help and see https://github.com/ryzsh/gitstatus
+# Type `build -h` for help and see https://github.com/ryzsh/ryzsh10k
 # for full documentation.
 
 set -ue
@@ -18,7 +18,7 @@ if [ -z "${ZSH_VERSION-}" ] && command -v zsh >/dev/null 2>&1; then
   esac
 fi
 
-# Avoid ksh: https://github.com/ryzsh/gitstatus/issues/282.
+# Avoid ksh: https://github.com/ryzsh/ryzsh10k/issues/282.
 if [ -n "${KSH_VERSION-}" ]; then
   if [ -z "${ZSH_VERSION-}" ] && command -v zsh >/dev/null 2>&1; then
     exec zsh "$0" "$@"

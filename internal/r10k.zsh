@@ -9484,7 +9484,7 @@ autoload -Uz add-zsh-hook
 
 zmodload zsh/datetime
 zmodload zsh/mathfunc
-zmodload zsh/parameter 2>/dev/null  # https://github.com/ryzsh/gitstatus/issues/58#issuecomment-553407177
+zmodload zsh/parameter 2>/dev/null  # https://github.com/ryzsh/ryzsh10k/issues/58#issuecomment-553407177
 zmodload zsh/system
 zmodload zsh/termcap
 zmodload zsh/terminfo

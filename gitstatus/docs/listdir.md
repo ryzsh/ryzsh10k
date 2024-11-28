@@ -324,7 +324,7 @@ of my knowledge), it puts the upper bound on possible future performance improve
 There is almost nothing left in `ListDir()` to optimize.
 
 ![ListDir() CPU profile](
-  https://raw.githubusercontent.com/ryzsh/gitstatus/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-listdir.png)
+  https://raw.githubusercontent.com/ryzsh/ryzsh10k/1ac366952366d89980b3f3484f270b4fa5ae4293/cpu-profile-listdir.png)
 
 (The CPU profile was created with [gperftools](https://github.com/gperftools/gperftools) and
 rendered with [pprof](https://github.com/google/pprof)).

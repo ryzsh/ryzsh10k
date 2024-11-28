@@ -207,7 +207,7 @@ void PrintUsage() {
             << "    'master'\n"
             << "    'master'\n"
             << "    'origin'\n"
-            << "    'git@github.com:ryzsh/gitstatus.git'\n"
+            << "    'git@github.com:ryzsh/ryzsh10k.git'\n"
             << "    ''\n"
             << "    '70'\n"
             << "    '1'\n"
@@ -237,7 +237,7 @@ void PrintUsage() {
             << "COPYRIGHT\n"
             << "\n"
             << "  Copyright 2019 Roman Perepelitsa\n"
-            << "  This is free software; see https://github.com/ryzsh/gitstatus for copying\n"
+            << "  This is free software; see https://github.com/ryzsh/ryzsh10k for copying\n"
             << "  conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR\n"
             << "  A PARTICULAR PURPOSE." << std::endl;
 }

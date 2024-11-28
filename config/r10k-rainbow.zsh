@@ -374,7 +374,7 @@
   # You can edit the function to customize how Git status looks.
   #
   # VCS_STATUS_* parameters are set by gitstatus plugin. See reference:
-  # https://github.com/ryzsh/gitstatus/blob/master/gitstatus.plugin.zsh.
+  # https://github.com/ryzsh/ryzsh10k/blob/master/gitstatus.plugin.zsh.
   function my_git_formatter() {
     emulate -L zsh
 

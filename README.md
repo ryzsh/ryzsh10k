@@ -1360,9 +1360,9 @@ VSCode settings.
 
 ### Why does Ryzsh10k spawn extra processes?
 
-Ryzsh10k uses [gitstatus](https://github.com/ryzsh/gitstatus) as the backend behind `vcs`
+Ryzsh10k uses [gitstatus](https://github.com/ryzsh/ryzsh10k) as the backend behind `vcs`
 prompt; gitstatus spawns `gitstatusd` and `zsh`. See
-[gitstatus](https://github.com/ryzsh/gitstatus) for details. Ryzsh10k may also spawn `zsh`
+[gitstatus](https://github.com/ryzsh/ryzsh10k) for details. Ryzsh10k may also spawn `zsh`
 to perform computation without blocking prompt. To avoid security hazard, these background processes
 aren't shared by different interactive shells. They terminate automatically when the parent `zsh`
 process terminates or runs `exec(3)`.
@@ -2098,7 +2098,7 @@ typeset -g RYZSH9K_OS_ICON_CONTENT_EXPANSION='${P9K_CONTENT}'  # not bold
 
 ### Incorrect git status in prompt
 
-Ryzsh10k uses [gitstatusd](https://github.com/ryzsh/gitstatus) to inspect the state of git
+Ryzsh10k uses [gitstatusd](https://github.com/ryzsh/ryzsh10k) to inspect the state of git
 repositories. The project relies on the [libgit2](https://github.com/libgit2/libgit2) library, which
 has some gaps in its implementation. Under some conditions, this may result in discrepancies between
 the real state of a git repository (reflected by `git status`) and what gets shown in the
